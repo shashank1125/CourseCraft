@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockchain Course</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+          
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            color: black;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            padding: 2%;
+            text-align: center;
+        }
+
+        main {
+            display: flex;
+            flex-grow: 1;
+        }
+
+        nav {
+            background-color: black;
+            color: #ffffff;
+            padding: 20px;
+            width: 700px;
+            box-shadow: black;
+            display: flex;
+            flex-direction: column;
+        }
+        nav a:hover {
+            background-color: #108f6f; /* Red hover effect */
+        }
+        section {
+            padding: 20px;
+            flex-grow: 1;
+            background-color: #FBE4DB;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgb(255, 252, 252);
+            
+        }
+
+        h2 {
+            color:black;
+        }
+
+        p {
+            color: #f8f4f4;
+        }
+        .start-learning-button {
+            display: block;
+            margin: 20px auto 0; /* Adjusted margin to create space between sections and button */
+            padding: 10px 35px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 class="text-3xl font-bold">Blockchain</h1>
+    </header>
+
+    <main class="flex">
+        <nav class="bg-black text-white p-4 space-y-4">
+            <a href="#introduction">Introduction</a>
+            <a href="#blockchain-technology">Blockchain Technology</a>
+            <a href="#smart-contracts">Smart Contracts</a>
+            <a href="#decentralized-applications">Decentralized Applications (DApps)</a>
+        </nav>
+
+        <section class="p-4 flex-grow">
+            <div id="introduction">
+                <h2 class="text-2xl font-semibold mb-4">Introduction to Blockchain</h2>
+                <p class="text-gray-700">Blockchain is a distributed ledger technology that enables secure and transparent peer-to-peer transactions without the need for intermediaries. It consists of a chain of blocks, where each block contains a list of transactions. These transactions are validated and added to the blockchain through a consensus mechanism, ensuring immutability and integrity of the data. Blockchain technology has the potential to revolutionize various industries, including finance, supply chain, healthcare, and more.</p>
+            </div>
+
+            <div id="blockchain-technology" class="mt-6">
+                <h2 class="text-2xl font-semibold mb-4">Blockchain Technology</h2>
+                <p class="text-gray-700">Blockchain technology utilizes cryptographic techniques to ensure the security and integrity of transactions. It employs a decentralized network of nodes that collectively maintain and validate the blockchain. Consensus mechanisms such as Proof of Work (PoW) and Proof of Stake (PoS) are used to achieve agreement on the state of the blockchain. Additionally, blockchain platforms may support various features such as smart contracts, digital assets, and decentralized governance.</p>
+            </div>
+
+            <div id="smart-contracts" class="mt-6">
+                <h2 class="text-2xl font-semibold mb-4">Smart Contracts</h2>
+                <p class="text-gray-700">Smart contracts are self-executing contracts with the terms of the agreement directly written into code. They run on blockchain platforms and automatically enforce the terms and conditions of a contract without the need for intermediaries. Smart contracts enable trustless and tamper-proof transactions, as they are executed and recorded on the blockchain in a transparent and immutable manner. They have applications in various domains, including finance, real estate, supply chain, and more.</p>
+            </div>
+
+            <div id="decentralized-applications" class="mt-6">
+                <h2 class="text-2xl font-semibold mb-4">Decentralized Applications (DApps)</h2>
+                <p class="text-gray-700">Decentralized applications (DApps) are applications that run on a decentralized network of computers, typically utilizing blockchain technology. Unlike traditional centralized applications, DApps are not controlled by a single entity and are resistant to censorship and downtime. They often leverage smart contracts to automate processes and enable peer-to-peer interactions. DApps have gained popularity in areas such as finance, gaming, social media, and more.</p>
+            </div>
+        </section>
+        
+    </main>
+    <a href="blockchain_assign.html" class="start-learning-button">Start quiz</a>
+
+</body>
+</html>

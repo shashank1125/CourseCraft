@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:white;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: flex-start; 
+            align-items: center; 
+            background-color: #333;
+            padding: 0; 
+            margin: 0; 
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            border: 1px solid #fff; 
+            border-radius: 5px; 
+            transition: background-color 0.3s ease;
+            margin-top: 0; 
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: flex-start;
+            padding: 20px;
+        }
+
+        .course-section {
+            background-color: #EBD9B4;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .course-list {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        .course-list li {
+            margin: 10px;
+        }
+
+        .course-link {
+            text-decoration: none;
+            color: #333;
+            padding: 5px;
+            background-color: #EBD9B4;
+            border-radius: 5px;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .course-link:hover {
+            background-color: #C6A969;
+        }
+
+        .course-image {
+            max-width: 50%;
+            max-height: 50%;
+            object-fit:fill; 
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Courses</h1>
+        <nav>
+            <a href="basic.html">Home</a>
+        </nav>
+    </header>
+
+    <main>
+        <a href="big_data.html" class="course-link">
+            <div class="course-section">
+                <img src="big_data_image.jpg" alt="Big Data" class="course-image">
+                <h2>Big Data</h2>
+                <p>A comprehensive course covering the processing and analysis of large datasets.</p>
+            </div>
+        </a>
+
+        <a href="devops.html" class="course-link">
+        <div class="course-section">
+            <img src="devops_image.jpg" alt="DevOps" class="course-image">
+            <h2>DevOps</h2>
+            <p>Learn the principles of DevOps, emphasizing collaboration between development and operations teams for efficient software delivery.</p>
+        </div>
+        </a>
+
+        <a href="data_science.html" class="course-link">
+        <div class="course-section">
+            <img src="data_science_image.jpg" alt="Data Science" class="course-image">
+            <h2>Data Science</h2>
+            <p>Delve into the world of data exploration, statistical analysis, and machine learning to extract meaningful insights.</p>
+        </div>
+       </a>
+
+
+       <a href="cybersecurity.html" class="course-link">
+        <div class="course-section">
+            <img src="cybersecurity_image.jpg" alt="Cybersecurity" class="course-image">
+            <h2>Cybersecurity</h2>
+            <p>Protect systems and networks from cyber threats. Understand encryption, firewalls, and ethical hacking techniques.</p>
+        </div>
+    </a>
+
+    <a href="blockchain.html" class="course-link">
+        <div class="course-section">
+            <img src="blockchain_image.jpg" alt="Blockchain" class="course-image">
+            <h2>Blockchain</h2>
+            <p>Explore the decentralized world of blockchain technology. Learn about cryptocurrencies, smart contracts, and distributed ledgers.</p>
+        </div>
+        </a>
+
+        
+        <a href="aiml.html" class="course-link">
+        <div class="course-section">
+            <img src="aiml_image.jpg" alt="AIML" class="course-image">
+            <h2>AIML</h2>
+            <p>Artificial Intelligence and Machine Learning course covering algorithms, deep learning, and applications in real-world scenarios.</p>
+        </div>
+    </a>
+    </main>
+
+</body>
+</html>

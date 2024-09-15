@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            background-color: #333;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            margin-top: 0;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        main {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            padding: 20px;
+        }
+
+        .course-section {
+            background-color: #EBD9B4;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin: 10px;
+            padding: 20px;
+            text-align: left;
+            width: 300px;
+            height: 400px;
+            box-sizing: border-box;
+        }
+
+        .course-section h2 {
+            margin-bottom: 10px;
+        }
+
+        .course-list {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        .course-list li {
+            margin: 10px;
+        }
+
+        .course-link {
+            text-decoration: none;
+            color: #333;
+            padding: 5px;
+            background-color: #EBD9B4;
+            border-radius: 5px;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .course-link:hover {
+            background-color: #D2B48C;
+        }
+
+        .course-image {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: fill;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Student Dashboard!!!</h1>
+        <nav>
+            <a href="basic.html">Home</a>
+        </nav>
+    </header>
+
+    <main>
+        <a href="inside_course.html" class="course-link">
+            <div class="course-section">
+                <img src="course.jpg" alt="Courses" class="course-image">
+                <h2>Courses</h2>
+            </div>
+        </a>
+
+        
+
+        <a href="assignment.html" class="course-link">
+            <div class="course-section">
+                <img src="assignment.jpg" alt="Assignment" class="course-image">
+                <h2>Assignment</h2>
+            </div>
+        </a>
+
+        <a href="feedback_form.html" class="course-link">
+            <div class="course-section">
+                <img src="feedback.jpg" alt="Feedback" class="course-image">
+                <h2>Feedback</h2>
+            </div>
+        </a>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <style>
+        
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: 'Arial', sans-serif;
+                background-color: #f4f4f4;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+    
+            .registration-container {
+                background-color: #fff;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                padding: 30px;
+                border-radius: 8px;
+                width: 300px;
+                text-align: center;
+            }
+    
+            .registration-container h2 {
+                color: #333;
+            }
+    
+            .registration-form {
+                display: flex;
+                flex-direction: column;
+                margin-top: 20px;
+            }
+    
+            .registration-form label {
+                font-size: 14px;
+                color: #666;
+                margin-bottom: 5px;
+                text-align: left;
+            }
+    
+            .registration-form input,
+            .registration-form select {
+                padding: 10px;
+                margin-bottom: 15px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                font-size: 16px;
+            }
+    
+            .registration-form button {
+                background-color: #EBD9B4;
+                color: black;
+                padding: 10px 20px;
+                font-size: 1em;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+    
+            .registration-form button:hover {
+                background-color: #D2B48C;
+            }
+    
+            .unique-id {
+                font-size: 18px;
+                color: #333;
+                margin-top: 20px;
+            }
+    
+            .unique-id-container {
+                margin-top: 20px;
+                text-align: center;
+            }
+    
+            #unique-id-display {
+                font-size: 2em;
+                margin: 20px 0;
+                padding: 10px;
+                background-color: black;
+                color: #fff;
+                border-radius: 5px;
+            }
+        
+    </style>
+    <script>
+        
+        function generateUserId() {
+           
+            var generatedId = Math.floor(1000 + Math.random() * 9000);
+            document.getElementById("unique-id-display").innerText = "Your User ID is: " + generatedId;
+            document.getElementById("UserId").value = generatedId;
+        }
+    </script>
+</head>
+<body>
+
+    <div class="registration-container">
+        <h2>Registration</h2>
+        <form class="registration-form" action="instructorregister.php" method="post">
+            <label for="Username">Username:</label>
+            <input type="text" id="Username" name="Username" required>
+
+            <label for="Password">Password:</label>
+            <input type="Password" id="Password" name="Password" required>
+
+            <label for="Email">Email:</label>
+            <input type="Email" id="Email" name="Email" required>
+
+            <label for="Coursetaught">Course handle:</label>
+            <input type="Coursetaught" id="Coursetaught" name="Coursetaught" required>
+            
+
+            <label for="Userrole">Userrole:</label>
+            <select id="Userrole" name="Userrole">
+                <option value="admin">Admin</option>
+                <option value="instructor">Instructor</option>
+                <option value="student">Student</option>
+            </select>
+            
+            <button type="button" onclick="generateUserId()">Generate User ID</button>
+
+            <div class="unique-id-container">
+                <div id="unique-id-display">1234</div>
+            </div>
+
+            
+            <label for="UserId">User ID:</label>
+            <input type="text" id="UserId" name="UserId" required readonly>
+
+            <button type="submit">Register</button>
+            
+        </form>
+    </div>
+
+</body>
+</html>

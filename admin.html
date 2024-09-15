@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <style>
+        
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: black;;
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid #fff; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease;
+    margin-top: 0; 
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center; 
+    background-color: #333;
+    padding: 0; 
+    margin: 0; 
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    background-color: #EBD9B4;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: #D2B48C;
+}
+
+    </style>
+</head>
+<body>
+    
+    <header>
+        <h1>Welcome to Admin Dashboard!!</h1>
+        <nav>
+            <a href="basic.html">Home</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Admin Panel</h2>
+        <ul>
+            <li><a href="stu_adminpanel.php">View Student List</a></li>
+            <li><a href="inst_adminpanel.php">View Instructor List</a></li>
+            <li><a href="view_enrollment.php">View Enrollments</a></li>
+            <li><a href="admin_marks_list.php">View Marks of Students</a></li>
+            <li><a href="manage_users.php">Manage Users</a></li>
+            <li><a href="generate_reports.php">Generate Reports</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>

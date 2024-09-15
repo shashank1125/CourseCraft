@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70vh;
+        }
+
+        
+        .section {
+            margin: 20px;
+            height: 200px;
+            width: 400px;
+            
+        }
+
+        .section h3 {
+            font-size: 24px;
+        }
+        
+        .form-group {
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        
+        input[type="submit"] {
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="section" id="add-course-section">
+        <h3>Add Courses</h3>
+        <form action="add_course.php" method="post">
+            <div class="form-group">
+                <label for="courseName">Course Name:</label>
+                <input type="text" id="courseName" name="courseName">
+            </div>
+            <div class="form-group">
+                <label for="courseDescription">Course Description:</label>
+                <input type="text" id="courseDescription" name="courseDescription">
+            </div>
+            <input type="submit" value="Add Course">
+        </form>
+    </div>
+    </div>
+</body>
+
+</html>

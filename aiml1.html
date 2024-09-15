@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIML Course</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+         
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            color: #333;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 2%;
+            text-align: center;
+        }
+
+        main {
+            display: flex;
+            flex-grow: 1;
+        }
+
+        nav {
+            background-color: #852156;
+            color: #ffffff;
+            padding: 20px;
+            width: 700px;
+            box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+        }
+        nav a:hover {
+            background-color: #e74c3c; /* Red hover effect */
+        }
+        section {
+            padding: 20px;
+            flex-grow: 1;
+            background-color: #FBE4DB;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgb(255, 252, 252);
+            border: #852156;
+        }
+
+        h2 {
+            color: black;
+        }
+
+        p {
+            color: #f8f4f4;
+        }
+
+        .start-learning-button {
+            display: block;
+            margin: 20px auto 0; /* Adjusted margin to create space between sections and button */
+            padding: 10px 35px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 class="text-3xl font-bold">AIML</h1>
+    </header>
+
+    <main class="flex">
+        <nav class="bg-gray-800 text-white p-4 space-y-4">
+            <a href="#introduction">Introduction</a>
+            <a href="#machine-learning">Machine Learning</a>
+            <a href="#deep-learning">Deep Learning</a>
+            <a href="#natural-language-processing">Natural Language Processing</a>
+            <!-- Add more topics as needed -->
+        </nav>
+
+        <section class="p-4 flex-grow">
+            <div id="introduction">
+                <h2 class="text-2xl font-semibold mb-4">Introduction to AIML</h2>
+                <p class="text-gray-700">Introduction to Artificial Intelligence and Machine Learning (AIML) provides an overview of the field of artificial intelligence (AI) and its subset, machine learning (ML). It explores how AI systems can learn from data and improve their performance over time without being explicitly programmed. AIML covers various algorithms, techniques, and applications used in solving complex problems such as image recognition, speech recognition, and autonomous driving. It also discusses the ethical and societal implications of AI and ML technologies, including bias, privacy concerns, and job displacement.</p>
+            </div>
+
+            <div id="machine-learning" class="mt-6">
+                <h2 class="text-2xl font-semibold mb-4">Machine Learning</h2>
+                <p class="text-gray-700">Machine Learning (ML) is a subset of artificial intelligence (AI) that focuses on developing algorithms and techniques that enable computers to learn from data and make predictions or decisions without being explicitly programmed. ML algorithms can be categorized into supervised learning, unsupervised learning, and reinforcement learning, each serving different purposes and applications. Supervised learning involves learning from labeled data, unsupervised learning discovers patterns and structures in unlabeled data, and reinforcement learning learns through trial and error by interacting with an environment. </p>
+            </div>
+
+            <div id="deep-learning" class="mt-6">
+                <h2 class="text-2xl font-semibold mb-4">Deep Learning</h2>
+                <p class="text-gray-700">Deep Learning is a subset of machine learning that utilizes artificial neural networks with multiple layers (deep neural networks) to learn complex representations of data. Deep learning algorithms, such as convolutional neural networks (CNNs) and recurrent neural networks (RNNs), excel at tasks involving unstructured data such as images, text, and audio. Deep learning has revolutionized fields such as computer vision, natural language processing, and speech recognition, achieving state-of-the-art performance in various tasks previously considered challenging for traditional machine learning approaches.</p>
+            </div>
+
+            <div id="natural-language-processing" class="mt-6">
+                <h2 class="text-2xl font-semibold mb-4">Natural Language Processing</h2>
+                <p class="text-gray-700">Natural Language Processing (NLP) is a subfield of artificial intelligence and linguistics that focuses on the interaction between computers and human language. NLP techniques enable computers to understand, interpret, and generate human language in a way that is meaningful and useful. NLP encompasses tasks such as text classification, sentiment analysis, machine translation, and speech recognition. It involves processing and analyzing large volumes of textual data, extracting relevant information, and deriving insights to support decision-making processes.</p>
+            </div>
+
+        </section>
+    </main>
+    <a href="aiml_assign.html" class="start-learning-button">Start quiz</a>
+
+</body>
+</html>

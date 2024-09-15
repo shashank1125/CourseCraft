@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Science Course</title>
+    
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            color: #333;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            padding: 2%;
+            text-align: center;
+        }
+
+        main {
+            display: flex;
+            flex-grow: 1;
+            position: relative;
+        }
+
+        nav {
+            background-color: black;
+            color: #ffffff;
+            padding: 20px;
+            width: 700px;
+            box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+        }
+        nav a:hover {
+            background-color: #B58863; 
+        }
+        section {
+            padding: 20px;
+            flex-grow: 1;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgb(255, 252, 252);
+            border: #852156;
+        }
+
+        h2 {
+            color: black;
+        }
+
+        p {
+            color: #f8f4f4;
+        }
+
+        .start-learning-button {
+            display: block;
+            margin: 20px auto 0; 
+            padding: 10px 35px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 class="text-3xl font-bold">Data Science</h1>
+    </header>
+
+    <main class="flex">
+        <nav class="bg-black text-white p-4 space-y-4">
+            <a href="#introduction">Introduction</a>
+            <a href="#data-analysis">Data Analysis</a>
+            <a href="#machine-learning">Machine Learning</a>
+            <a href="#data-visualization">Data Visualization</a>
+        </nav>
+
+        <section class="p-4 flex-grow">
+            <div id="introduction">
+                <h2 class="text-2xl font-semibold mb-4">Introduction to Data Science</h2>
+                <p class="text-gray-700">Data Science is an interdisciplinary field that combines domain knowledge, programming skills, and statistical techniques to extract insights and knowledge from data. It involves various stages such as data collection, cleaning, analysis, interpretation, and communication of results. Data scientists use tools and techniques from statistics, machine learning, and computer science to solve complex problems and make data-driven decisions.</p>
+            </div>
+
+            <div id="data-analysis" class="mt-6">
+                <h2 class="text-2xl font-semibold mb-4">Data Analysis</h2>
+                <p class="text-gray-700">Data Analysis is the process of inspecting, cleaning, transforming, and modeling data to uncover meaningful insights, patterns, and trends. It involves descriptive statistics, exploratory data analysis (EDA), hypothesis testing, and regression analysis. Data analysis techniques help in understanding the underlying structure of data and making informed decisions based on evidence.</p>
+            </div>
+
+            <div id="machine-learning" class="mt-6">
+                <h2 class="text-2xl font-semibold mb-4">Machine Learning</h2>
+                <p class="text-gray-700">Machine Learning is a subset of artificial intelligence that focuses on developing algorithms and models that enable computers to learn from data and make predictions or decisions without being explicitly programmed. It encompasses supervised learning, unsupervised learning, and reinforcement learning techniques, which are used for tasks such as classification, regression, clustering, and recommendation systems.</p>
+            </div>
+
+            <div id="data-visualization" class="mt-6">
+                <h2 class="text-2xl font-semibold mb-4">Data Visualization</h2>
+                <p class="text-gray-700">Data Visualization is the graphical representation of data and information to facilitate understanding and communication. It involves creating visualizations such as charts, graphs, and maps to explore data, identify patterns, and convey insights effectively. Data visualization tools and techniques help in telling stories with data and making data-driven decisions.</p>
+            </div>
+        </section>
+       
+    </main>
+    
+    <a href="datascience_assign.html" class="start-learning-button">Start quiz</a>
+
+</body>
+</html>

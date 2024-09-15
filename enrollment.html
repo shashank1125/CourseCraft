@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enrollment Form</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 500px;
+            width: 100%;
+            height: 84%;
+            box-sizing: border-box;
+        }
+        .enrollment-container {
+            background-color: black;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            border-radius: 8px;
+            width: 400px;
+            height: 105%;
+            text-align: center;
+        }
+
+        .enrollment-container h2 {
+            color: white;
+            
+        }
+
+
+        label {
+            display: block;
+            margin: 10px 0;
+            font-weight: bold;
+            color: #555;
+        }
+
+        input {
+            width: calc(100% - 16px);
+            padding: 10px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: black;
+            color: #fff;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="enrollment-container">
+    <h2>Enrollment</h2>
+    <form action="enrollment.php" method="post">
+        <label for="Studentid">Student ID:</label>
+        <input type="text" id="Studentid" name="Studentid" required>
+
+        <label for="Studentname">Student name:</label>
+        <input type="Studentname" id="Studentname" name="Studentname" required>
+
+        <label for="Coursename">Course Name:</label>
+        <input type="text" id="Coursename" name="Coursename" required>
+        
+        <label for="Startdate">Start Date:</label>
+        <input type="date" id="Startdate" name="Startdate" required>
+
+        <label for="Enddate">End Date:</label>
+        <input type="date" id="Enddate" name="Enddate" readonly>
+
+        <button type="submit">Enroll</button>
+    </form>
+    </div>
+
+    <script>
+        document.getElementById('Startdate').addEventListener('change', function () {
+            const Startdate = new Date(this.value);
+            const Enddate = new Date(Startdate);
+            Enddate.setDate(Enddate.getDate() + 30);
+
+            const formattedEnddate = Enddate.toISOString().split('T')[0];
+            document.getElementById('Enddate').value = formattedEnddate;
+        });
+    </script>
+
+</body>
+</html>
